@@ -1,0 +1,138 @@
+<view class="bg-wrapper">
+	<view class="bg-main">
+		<view class="item-wrapper">
+			<view class="item-main">
+				<view class="pic">
+				</view>
+				<view class="intro">
+					<view class="desc">
+						农产品销售，让您随时随地了解最新的农产品信息。
+					</view>
+					<view class="count">
+						733条内容
+					</view>
+					<view class="join">
+						<view class="avatar">
+							<view class="list">
+								<view class="item" style="left: 0;">
+								   <image src="/assets/images/3.png" mode=""/>
+								</view>
+								<view class="item" style="left: 20rpx;">
+									<image src="/assets/images/3.png" mode=""/>
+								</view>
+								<view class="item" style="left: 40rpx;">
+								  <image src="/assets/images/3.png" mode=""/>
+								</view>
+								<view class="item" style="left:60rpx;">
+									<image src="/assets/images/3.png" mode=""/>
+								</view>
+								<view class="item" style="left:80rpx;">
+								   s
+								</view>
+							</view>
+						</view>
+						<view class="count">
+						 31 个参与者
+						</view>
+
+					</view>
+				</view>
+			</view>
+		</view>
+	</view>
+</view>
+<!-- 标题 -->
+<view class="common-title-check-wrapper" style="margin-top:36rpx ;">
+	<view class="common-title-check-main">
+		<view class="title">热门推荐</view>
+		<view class="check">
+			<view class="desc">查看全部</view>
+			<view class="icon">
+				<image src="{{IP+'/assets/images/arg_right.png'}}" mode="aspectFill" />
+			</view>
+		</view>
+	</view>
+</view>
+<!-- 内容 -->
+<view class="hot-recom-wrapper">
+    <view class="hot-recom-main">
+		   <view class="item-wrapper" bindtap="handleDetail" wx:for="{{[1,2,3,4,6,7]}}" wx:key="this">
+			    <view class="item-main">
+						<view class="pic">
+						   <image src="/assets/images/3.png" mode="aspectFill"/>
+						</view>
+						<view class="desc">
+							新鲜有机蔬菜，味道鲜美，营养丰富。
+						</view>
+						<view class="name-like">
+						   <view class="name">姜志伟</view>
+							 <view class="like">
+								 <image src="{{IP+'/assets/images/like_active.png'}}" mode=""/>
+							 </view>
+						</view>
+					</view>
+			 </view>
+			 
+		</view>
+</view>
+<!-- 标题 -->
+<view class="common-title-check-wrapper">
+	<view class="common-title-check-main">
+		<view class="title">农场</view>
+		<view class="check">
+			<view class="desc">查看全部</view>
+			<view class="icon">
+				<image src="{{IP+'/assets/images/arg_right.png'}}" mode="aspectFill" />
+			</view>
+		</view>
+	</view>
+</view>
+<!-- 瀑布流 -->
+<view class="water-fall-wrapper techno">
+	<view class="water-fall-main">
+		<view class="left-wrapper">
+			<view class="left-main">
+				<view class="item-wrapper" wx:for="{{leftGoods}}" wx:key="this">
+					<view class="item-main">
+						<view class="pic" style="height: {{item.pic_height}}rpx;">
+							<image src="{{item.src}}" mode="aspectFill" />
+						</view>
+						<view class="like-num">
+						   <view class="like">
+							     <image src="http://192.168.31.34:8080/assets/images/like.png" mode=""/>
+							 </view>
+							 <view class="num">5</view>
+						</view>
+						<view class="title-desc">
+								<view class="title">农业技术</view>
+								<view class="desc">了解最新的农业技术和种植方法</view>
+						</view>
+
+					</view>
+				</view>
+			</view>
+		</view>
+		<view class="right-wrapper">
+			<view class="right-main">
+				<view class="item-wrapper" wx:for="{{rightGoods}}" wx:key="this">
+					<view class="item-main">
+						<view class="pic" style="height: {{item.pic_height}}rpx;">
+							<image src="{{item.src}}" mode="aspectFill" />
+						</view>
+						<view class="like-num">
+						   <view class="like">
+							     <image src="http://192.168.31.34:8080/assets/images/like.png" mode=""/>
+							 </view>
+							 <view class="num">5</view>
+						</view>
+						<view class="title-desc">
+								<view class="title">农业技术</view>
+								<view class="desc">了解最新的农业技术和种植方法</view>
+						</view>
+					
+					</view>
+				</view>
+			</view>
+		</view>
+	</view>
+</view>

@@ -1,0 +1,52 @@
+<view class="home-wrapper">
+    <view class="home-main">
+        <!-- 内容区域 -->
+        <block wx:if="{{tabBarIndex===0}}">
+           <Schoolmate tabBarTitle="{{tabBarTitle}}"
+           tabBarIndex="{{tabBarIndex}}"
+           />
+        </block>
+        <block  wx:if="{{tabBarIndex===1}}">
+            <Organization tabBarTitle="{{tabBarTitle}}"
+           tabBarIndex="{{tabBarIndex}}"/>
+        </block>
+        <block  wx:if="{{tabBarIndex===2}}">
+            <Logo tabBarTitle="{{tabBarTitle}}"
+           tabBarIndex="{{tabBarIndex}}"/>
+        </block>
+        <block  wx:if="{{tabBarIndex===3}}">
+            <Service tabBarTitle="{{tabBarTitle}}"
+           tabBarIndex="{{tabBarIndex}}"/>
+        </block>
+        <block  wx:if="{{tabBarIndex===4}}">
+            <My tabBarTitle="{{tabBarTitle}}"
+           tabBarIndex="{{tabBarIndex}}"/>
+        </block>
+        <!-- tabbar -->
+        <view class="tabBar">
+            <view class="[item,{{tabBarIndex==0?'active':''}}]" data-index="0" bindtap="handleTabItem">
+                <image src="{{tabBarIndex==0?IP+'/assets/images/schoolmate-active.png':IP+'/assets/images/schoolmate.png'}}" class="icon" />
+                <view class="desc">校友</view>
+            </view>
+            <view class="[item,{{tabBarIndex==1?'active':''}}]" data-index="1" bindtap="handleTabItem">
+                <image src="{{tabBarIndex==1?IP+'/assets/images/organization-active.png':IP+'/assets/images/organization.png'}}" class="icon" />
+                <view class="desc">组织</view>
+            </view>
+            <view class="item school" data-index="2" bindtap="handleTabItem">
+                <image src="{{IP+'/assets/images/backpic.png'}}" class="icon" />
+                <view class="top-radius">
+                </view>
+                
+            </view>
+            <view class="[item,{{tabBarIndex==3?'active':''}}]" data-index="3" bindtap="handleTabItem">
+                <image src="{{tabBarIndex==3?IP+'/assets/images/service-active.png':IP+'/assets/images/service.png'}}" class="icon" />
+                <view class="desc">服务</view>
+            </view>
+            <view class="[item,{{tabBarIndex==4?'active':''}}]" data-index="4" bindtap="handleTabItem">
+                <image src="{{tabBarIndex==4?IP+'/assets/images/register-active.png':IP+'/assets/images/register.png'}}" class="icon">
+                </image>
+                <view class="desc">我的</view>
+            </view>
+        </view>
+    </view>
+</view>

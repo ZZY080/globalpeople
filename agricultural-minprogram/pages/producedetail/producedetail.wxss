@@ -1,0 +1,225 @@
+.nav-wrapper {
+    padding: 0 32rpx;
+    margin-top: 36rpx;
+}
+
+.nav-main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.nav-main .item-wrapper {
+    box-sizing: border-box;
+    width: 20%;
+    padding: 0 6.6rpx;
+    margin-bottom: 32rpx;
+}
+
+.nav-main .item-wrapper:nth-child(5n+1) {
+    padding: 0 12rpx 0 0;
+}
+
+.nav-main .item-wrapper:nth-child(5n+5) {
+    padding: 0 0 0 12rpx;
+}
+
+.nav-main .item-wrapper .item-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-main .item-wrapper .item-main .pic {
+    width: 80rpx;
+    height: 80rpx;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.nav-main .item-wrapper .item-main .pic image {
+    width: 100%;
+    height: 100%;
+}
+
+.nav-main .item-wrapper .item-main .desc {
+    font-size: 24rpx;
+    font-weight: 400;
+    color: rgba(78, 89, 105, 1);
+    margin-top: 12rpx;
+}
+
+
+
+/* 评论 */
+.comment-wrapper {
+    margin-top: 28rpx;
+    padding: 0 24rpx;
+}
+
+.comment-main .item-wrapper {
+    margin-bottom: 16rpx;
+}
+
+.comment-main .item-wrapper .item-main {
+    padding: 16rpx 32rpx 40rpx;
+    border-radius: 12px;
+    background: rgba(247, 248, 250, 1);
+    /* height: 322px; */
+}
+
+.comment-main .item-wrapper .item-main .outer {
+    display: flex;
+    flex-direction: row;
+}
+
+.comment-main .item-wrapper .item-main .outer .avatar {
+    width: 72rpx;
+    height: 72rpx;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-right: 24rpx;
+}
+
+.comment-main .item-wrapper .item-main .outer .info {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.comment-main .item-wrapper .item-main .outer .info .username-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.comment-main .item-wrapper .item-main .outer .info .username-title .username {
+    font-size: 24rpx;
+    color: rgba(134, 144, 156, 1);
+}
+
+.comment-main .item-wrapper .item-main .outer .info .username-title .title {
+    border-radius: 4px;
+    background: rgba(255, 247, 232, 1);
+    border: 1px solid rgba(255, 247, 232, 1);
+    padding: 6rpx 16rpx 6rpx 16rpx;
+    font-size: 12px;
+    font-weight: 500;
+    color: rgba(255, 125, 0, 1);
+}
+
+.comment-main .item-wrapper .item-main .outer .info .desc {
+    margin-top: 10rpx;
+    line-height: 50rpx;
+    font-size: 28rpx;
+    color: rgba(29, 33, 41, 1);
+}
+
+.comment-main .item-wrapper .item-main .outer .info .time-icon {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10rpx;
+}
+
+.comment-main .item-wrapper .item-main .outer .info .time-icon .time {
+    font-size: 24rpx;
+    color: rgba(134, 144, 156, 1);
+}
+.comment-main .item-wrapper .item-main .outer .info .time-icon  .icon {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.comment-main .item-wrapper .item-main .outer .info .time-icon  .icon .msg {
+  width: 26rpx;
+  height: 26rpx;
+  margin-right: 30rpx;
+}
+.comment-main .item-wrapper .item-main .outer .info .time-icon  .icon .hand {
+    width: 28rpx;
+    height: 24rpx;
+}
+
+
+
+.comment-main .item-wrapper .item-main .inner {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    margin-top: 58rpx;
+    padding-left: 80rpx;
+}
+
+.comment-main .item-wrapper .item-main .inner .avatar {
+    width: 28rpx;
+    height: 28rpx;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-right: 24rpx;
+}
+
+.comment-main .item-wrapper .item-main .inner .info {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.comment-main .item-wrapper .item-main .inner .info .username-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* align-items: center; */
+}
+
+.comment-main .item-wrapper .item-main .inner .info .username-title .username {
+    font-size: 24rpx;
+    color: rgba(134, 144, 156, 1);
+}
+
+.comment-main .item-wrapper .item-main .inner .info .username-title .title {
+    border-radius: 4px;
+    background: rgba(255, 247, 232, 1);
+    border: 1px solid rgba(255, 247, 232, 1);
+    padding: 6rpx 16rpx 6rpx 16rpx;
+    font-size: 12px;
+    font-weight: 500;
+    color: rgba(255, 125, 0, 1);
+}
+
+.comment-main .item-wrapper .item-main .inner .info .desc {
+    margin-top: 10rpx;
+    line-height: 50rpx;
+    font-size: 28rpx;
+    color: rgba(29, 33, 41, 1);
+}
+
+.comment-main .item-wrapper .item-main .inner .info .time-icon {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10rpx;
+}
+
+.comment-main .item-wrapper .item-main .inner .info .time-icon .time {
+    font-size: 24rpx;
+    color: rgba(134, 144, 156, 1);
+}
+.comment-main .item-wrapper .item-main .inner .info .time-icon  .icon {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.comment-main .item-wrapper .item-main .inner .info .time-icon  .icon .msg {
+  width: 26rpx;
+  height: 26rpx;
+  margin-right: 30rpx;
+}
+.comment-main .item-wrapper .item-main .inner .info .time-icon  .icon .hand {
+    width: 28rpx;
+    height: 24rpx;
+}

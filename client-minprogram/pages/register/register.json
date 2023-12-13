@@ -1,0 +1,7 @@
+{
+    "usingComponents": {
+        "navigationBar":"/components/navigationBar/navigationBar"
+    },
+    "navigationBarTitleText": "注册"
+    
+}

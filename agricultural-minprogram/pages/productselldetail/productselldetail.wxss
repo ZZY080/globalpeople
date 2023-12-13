@@ -1,0 +1,92 @@
+.car-wrapper {
+	margin-top: 36rpx;
+	padding: 0 32rpx;
+}
+
+.car-main {}
+
+.car-main .item {
+	box-sizing: border-box;
+	border-radius: 24rpx;
+	background: rgba(247, 248, 250, 1);
+	padding: 16rpx 24rpx 16rpx 16rpx;
+	display: flex;
+	flex-direction: row;
+	margin-bottom: 16rpx;
+}
+
+.car-main .item>.pic {
+	width: 176rpx;
+	height: 176rpx;
+	border-radius: 24rpx;
+	overflow: hidden;
+	margin-right: 24rpx;
+}
+
+.car-main .item .info {
+	flex: 1;
+}
+
+.car-main .item .info .title {
+	font-size: 30rpx;
+	font-weight: 800;
+	color: rgba(29, 33, 41, 1);
+}
+
+.car-main .item .info .desc {
+	margin-top: 16rpx;
+	font-size: 24rpx;
+	width: 300rpx;
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	/* 显示两行 */
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+	color: rgba(134, 144, 156, 1);
+}
+
+
+
+.car-main .item .info .price-btncount {
+	margin-top: 16rpx;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.car-main .item .info .price-btncount .price {
+	font-size: 16px;
+	font-weight: 800;
+	color: rgba(0, 128, 0, 1);
+}
+
+.car-main .item .info .price-btncount .btncount {
+	display: flex;
+	flex-direction: row;
+}
+
+.car-main .item .info .price-btncount .btncount .decrement {
+	width: 20px;
+	height: 20px;
+}
+
+.car-main .item .info .price-btncount .btncount .decrement .pic {
+	width: 100%;
+	height: 100%;
+}
+
+.car-main .item .info .price-btncount .btncount .count {
+	padding: 0 40rpx;
+	font-size: 28rpx;
+	color: rgba(29, 33, 41, 1);
+}
+
+.car-main .item .info .price-btncount .btncount .increment {
+	width: 20px;
+	height: 20px;
+}
+
+.car-main .item .info .price-btncount .btncount .increment .pic {
+	width: 100%;
+	height: 100%;
+}

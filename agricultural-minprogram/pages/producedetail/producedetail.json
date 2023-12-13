@@ -1,0 +1,6 @@
+{
+  "usingComponents": {},
+  "navigationBarTitleText": "专属农场",
+  "enablePullDownRefresh": true,
+  "onReachBottomDistance": 50
+}

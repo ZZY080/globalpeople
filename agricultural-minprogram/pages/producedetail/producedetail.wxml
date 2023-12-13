@@ -1,0 +1,156 @@
+<!-- 导航 -->
+<view class="nav-wrapper">
+  <view class="nav-main">
+    <view class="item-wrapper" wx:for="{{navData}}" wx:key="this" bindtap="handleDetail" data-url="{{item.url}}">
+      <view class="item-main">
+        <view class="pic">
+          <image src="{{item.icon}}" mode="" />
+        </view>
+        <view class="desc">{{item.desc}}</view>
+      </view>
+    </view>
+  </view>
+</view>
+<!-- banner -->
+<view class="banner-wrapper">
+  <view class="banner-main">
+    <view class="item-wrapper" wx:for="{{bannerData}}" wx:key="this">
+      <view class="item-main" >
+        <image src="{{item.bgpic}}" mode="" class="pic" />
+        <view class="title-desc">
+          <view class="title">
+            {{item.title}}
+          </view>
+          <view class="desc">
+            {{item.desc}}
+          </view>
+        </view>
+
+      </view>
+    </view>
+  </view>
+</view>
+<!-- 标题 -->
+<!-- <view class="common-title-check-wrapper" style="margin-top: 56rpx;">
+  <view class="common-title-check-main">
+    <view class="title">评论</view>
+    <view class="check">
+      <view class="desc">查看全部</view>
+      <view class="icon">
+        <image src="{{IP+'/assets/images/arg_right.png'}}" mode="aspectFill" />
+      </view>
+    </view>
+  </view>
+</view> -->
+<!-- 评论 -->
+<!-- <view class="comment-wrapper">
+  <view class="comment-main">
+    <view class="item-wrapper" wx:for="{{[1,2]}}" wx:key="this">
+      <view class="item-main">
+        <view class="outer">
+          <image src="https://img.jsdesign2.com/assets/img/647845c1deec92129bb2b5d8.png#c0bad0cbc4ab8a3db270eb8e03a2c18d" mode="" class="avatar" />
+          <view class="info">
+            <view class="username-title">
+              <view class="username">陶杰</view>
+              <view class="title">农业专家</view>
+            </view>
+            <view class="desc">这个农产品真是棒极了，我一直在关注它的生长过程，非常健康有机。</view>
+            <view class="time-icon">
+              <view class="time">1983-01-26 16:27:47</view>
+              <view class="icon">
+                <image src="{{IP+'/assets/images/arg_msg.png'}}" mode="" class="msg"/>
+                <image src="{{IP+'/assets/images/arg_hand.png'}}" mode="" class="hand" />
+              </view>
+            </view>
+          </view>
+        </view>
+        <view class="inner">
+          <image src="https://img.jsdesign2.com/assets/img/647845c1deec92129bb2b5d8.png#c0bad0cbc4ab8a3db270eb8e03a2c18d" mode="" class="avatar" />
+          <view class="info">
+            <view class="username-title">
+              <view class="username">晓燕</view>
+            </view>
+            <view class="desc">这个农产品真是棒极了，我一直在关注它的生长过程，非常健康有机。</view>
+            <view class="time-icon">
+              <view class="time">1983-01-26 16:27:47</view>
+              <view class="icon">
+                <image src="{{IP+'/assets/images/arg_msg.png'}}" mode="" class="msg"/>
+                <image src="{{IP+'/assets/images/arg_hand.png'}}" mode="" class="hand" />
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view> -->
+<!-- 标题 -->
+<view class="common-title-check-wrapper" style="margin-top: 56rpx;">
+  <view class="common-title-check-main">
+    <view class="title">相关链接</view>
+    <view class="check">
+      <view class="desc">查看全部</view>
+      <view class="icon">
+        <image src="{{IP+'/assets/images/arg_right.png'}}" mode="aspectFill" />
+      </view>
+    </view>
+  </view>
+</view>
+<!-- 瀑布流 -->
+<view class="water-fall-wrapper link">
+  <view class="water-fall-main">
+    <view class="left-wrapper">
+      <view class="left-main">
+        <view class="item-wrapper" wx:for="{{leftGoods}}" wx:key="this">
+          <view class="item-main">
+            <view class="pic" style="height: {{item.pic_height}}rpx;">
+              <image src="{{item.src}}" mode="aspectFill" />
+            </view>
+            <view class="title">
+              种植多种农作物
+            </view>
+            <view class="avatar-username">
+              <view class="avatar">
+                <image src="https://img.jsdesign2.com/assets/img/651ae3dc00b795b1063899af.png#804a97ce70379fae7acdf40873750039" mode="" />
+              </view>
+              <view class="username">
+                安置来wqeqeweqeqwdsfdfdf
+              </view>
+            </view>
+            <view class="like-count">
+              <image src="{{IP+'/assets/images/like.png'}}" mode="" class="like" />
+              <view class="count">888</view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="right-wrapper">
+      <view class="right-main">
+        <view class="item-wrapper" wx:for="{{rightGoods}}" wx:key="this">
+          <view class="item-main">
+            <view class="pic" style="height: {{item.pic_height}}rpx;">
+              <image src="{{item.src}}" mode="aspectFill" />
+            </view>
+            <view class="title">
+              种植多种农作物
+            </view>
+            <view class="avatar-username">
+              <view class="avatar">
+                <image src="https://img.jsdesign2.com/assets/img/651ae3dc00b795b1063899af.png#804a97ce70379fae7acdf40873750039" mode="" />
+              </view>
+              <view class="username">
+                安置来wqeqeweqeqwdsfdfdf
+              </view>
+            </view>
+            <view class="like-count">
+              <image src="{{IP+'/assets/images/like.png'}}" mode="" class="like" />
+              <view class="count">888</view>
+            </view>
+
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

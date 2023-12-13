@@ -1,0 +1,127 @@
+<block wx:if="{{isLoadingFinsh}}" >
+    <!-- 土地图片 -->
+    <view class="swiper-wrapper">
+        <swiper class="swipper-main" autoplay="true" interval="3000" duration="2000" circular>
+            <swiper-item wx:for="{{swipperData}}" wx:key="this" class="item">
+                <image src="{{item}}" mode="aspectFill" bindtap="handPhotoDetail" data-current="{{item}}" />
+            </swiper-item>
+        </swiper>
+    </view>
+    <!-- 卡片 -->
+    <view class="card-wrapper">
+        <view class="card-main">
+            <view class="left-card" bindtap="handLocationDetail">
+                <image src="{{IP+'/assets/images/arg_soil_area.png'}}" mode="aspectFill" class="pic" />
+                <view class="title-desc">
+                    <view class="title">土地位置</view>
+                    <view class="desc"> {{soil_loaction}}</view>
+                </view>
+            </view>
+            <view class="right-box">
+                <view class="top-card">
+                    <image src="{{IP+'/assets/images/arg_plant_time.png'}}" mode="aspectFill" class="pic" />
+                    <view class="title-desc">
+                        <view class="title">土地面积</view>
+                        <view class="desc">{{soil_area}}平方米</view>
+                    </view>
+                </view>
+                <view class="bottom-card">
+                    <image src="{{IP+'/assets/images/arg_pre_time.png'}}" mode="aspectFill" class="pic" />
+                    <view class="title-desc">
+                        <view class="title">土地价格</view>
+                        <view class="desc">{{soil_price}}/年</view>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+    <!-- banner -->
+    <view class="banner-wrapper my">
+        <view class="banner-main">
+            <view class="item-wrapper" wx:for="{{soil_active}}" wx:key="this" bindtap="handlePayDetail" 
+            data-soil_id="{{soil_id}}"
+            data-money="{{item.price}}" 
+            data-time="{{item.time}}">
+                <view class="item-main">
+                    <image src="{{item.imgsrc}}" mode="" class="pic" />
+                    <view class="info">
+                        <view class="title">
+                            {{item.title}}
+                        </view>
+                        <view class="danwei-num-time">
+                            <view class="danwei">￥</view>
+                            <view class="num">{{item.price}}</view>
+                            <view class="time">/{{item.time}}</view>
+                        </view>
+                        <view class="btns">
+                            立即开通
+                        </view>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+    <view class="score-wrapper">
+        <view class="score-main">
+            <view class="title">土地租赁评分</view>
+            <view class="count-star">
+                <view class="count">4.5</view>
+                <view class="star">
+                    <view class="item" wx:for="{{[1,2,3,4]}}" wx:key="this">
+                        <image src="{{IP+'/assets/images/arg_star.png'}}" mode="" class="pic" />
+                    </view>
+                </view>
+            </view>
+            <view class="eval">土地租赁服务 价格合理 耕种经验丰富 租赁面积大</view>
+            <view class="desc">这是一个优质的土地租赁服务，提供价格合理的租金，以及丰富的耕种经验。土地面积广阔，适合各类农作物的种植。</view>
+        </view>
+    </view>
+    <!-- 标题 -->
+    <view class="common-title-check-wrapper" style="margin-top: 40rpx;">
+        <view class="common-title-check-main">
+            <view class="title">相关推荐</view>
+            <!-- <view class="check">
+            <view class="desc">查看全部</view>
+            <view class="icon">
+                <image src="{{IP+'/assets/images/arg_right.png'}}" mode="aspectFill" />
+            </view>
+        </view> -->
+        </view>
+    </view>
+    <!-- 瀑布流 -->
+    <view class="water-fall-wrapper techno" style="margin-top: 32rpx;">
+        <view class="water-fall-main">
+            <view class="left-wrapper">
+                <view class="left-main">
+                    <view class="item-wrapper" wx:for="{{leftGoods}}" wx:key="this">
+                        <view class="item-main">
+                            <view class="pic" style="height: {{item.pic_height}}rpx;">
+                                <image src="{{item.src}}" mode="aspectFill" />
+                            </view>
+                        </view>
+                    </view>
+                </view>
+            </view>
+            <view class="right-wrapper">
+                <view class="right-main">
+                    <view class="item-wrapper" wx:for="{{rightGoods}}" wx:key="this">
+                        <view class="item-main">
+                            <view class="pic" style="height: {{item.pic_height}}rpx;">
+                                <image src="{{item.src}}" mode="aspectFill" />
+                            </view>
+                        </view>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+    <!-- 点赞和收藏 -->
+    <view class="like-collect">
+        <view class="collect" bindtap="handleCollect">
+            <image src="{{soil_iscollect?IP+'/assets/images/arg_collect_active.png':IP+'/assets/images/arg_collect.png'}}" mode="" class="pic" />
+        </view>
+        <view class="like" bindtap="handleLike">
+            <image src="{{soil_islike?IP+'/assets/images/arg_like_active.png':IP+'/assets/images/arg_like.png'}}" mode="" class="pic" />
+        </view>
+    </view>
+</block>

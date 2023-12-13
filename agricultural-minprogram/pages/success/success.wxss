@@ -1,0 +1,52 @@
+page {
+	background-color: #ffffff !important;
+}
+.info-wrapper {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.info-main {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.info-main .word {
+	font-size: 36rpx;
+	font-weight: 600;
+}
+.info-main .bgpic {
+	margin-top: 32rpx;
+	width: 200rpx;
+	height: 200rpx;
+}
+.info-main .bgpic image {
+	width: 100%;
+	height: 100%;
+}
+.info-main .btns {
+	display: flex;
+	margin-top: 70rpx;
+}
+.info-main .btns .item {
+	padding: 20rpx 30rpx;
+	border-radius: 10rpx;
+	color: white;
+	font-size: 28rpx;
+	transition: all 0.4 ease;
+}
+.info-main .btns .item:active {
+	opacity: 0.2;
+}
+.info-main .btns .item:nth-child(1){
+	background-color: gray;
+	margin-right: 10rpx;
+}
+.info-main .btns .item:nth-child(2){
+ background-color: #07c160;
+ 
+}

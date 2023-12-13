@@ -1,0 +1,7 @@
+<view class="swiper-wrapper">
+	   <swiper class="swiper-main">
+			  <swiper-item>
+				    123
+				</swiper-item>
+		 </swiper>
+</view>

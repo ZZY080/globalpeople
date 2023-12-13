@@ -1,0 +1,82 @@
+.content-wrapper {
+    margin-top: 12rpx;
+    padding: 0 0 0 32rpx;
+}
+
+.content-main {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    overflow-x: auto;
+    /* 显示水平滚动条 */
+    white-space: nowrap;
+    /* 水平滚动需要禁用换行 */
+}
+
+.content-main::-webkit-scrollbar {
+    display: none;
+}
+
+.content-main .item {
+    position: relative;
+    flex: 0 0 auto;
+    overflow: hidden;
+    width: 256rpx;
+    height: 340rpx;
+    border-radius: 20rpx;
+    opacity: 1;
+    margin-right: 16rpx;
+}
+
+.content-main .item .bgpic {
+    width: 100%;
+    height: 100%;
+}
+
+.content-main .item .info {
+    width: 100%;
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 0px;
+    padding: 18rpx 16rpx;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.content-main .item .info .pic {
+    width: 56rpx;
+    height: 56rpx;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 1);
+    margin-right: 12rpx;
+}
+
+.content-main .item .info .pic image {
+    width: 100%;
+    height: 100%;
+}
+
+.content-main .item .info .title-desc {
+    flex: 1;
+    max-width: 60px;
+}
+
+.content-main .item .info .title-desc .title {
+    font-size: 24rpx;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 1);
+}
+
+.content-main .item .info .title-desc .desc {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    opacity: 0.7;
+    font-size: 20rpx;
+    color: rgba(255, 255, 255, 1);
+    margin-top: 5rpx;
+}
+
+

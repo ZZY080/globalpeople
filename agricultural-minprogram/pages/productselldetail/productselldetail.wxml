@@ -1,0 +1,123 @@
+<!-- banner -->
+<view class="banner-wrapper" style="margin-top: 20rpx;">
+	<view class="banner-main">
+		<view class="item-wrapper" wx:for="{{bannerData}}" wx:key="this">
+			<view class="item-main">
+				<image src="{{item.bgpic}}" mode="" class="pic" />
+				<view class="title-desc">
+					<view class="title">
+						{{item.title}}
+					</view>
+					<view class="desc">
+						{{item.desc}}
+					</view>
+				</view>
+			</view>
+		</view>
+	</view>
+</view>
+<!-- 标题 -->
+<view class="common-title-check-wrapper" style="margin-top: 40rpx;">
+	<view class="common-title-check-main">
+		<view class="title">购物车</view>
+		<view class="check">
+			<view class="desc">查看全部</view>
+			<view class="icon">
+				<image src="{{IP+'/assets/images/arg_right.png'}}" mode="aspectFill" />
+			</view>
+		</view>
+	</view>
+</view>
+<view class="car-wrapper">
+	<view class="car-main">
+		<view class="item" wx:for="{{carData}}" data-id="{{item.id}}" wx:key="this">
+			<image src="{{item.carimg}}" mode="" class="pic" />
+			<view class="info">
+				<view class="title">{{item.title}}</view>
+				<view class="desc">{{item.desc}}</view>
+				<view class="price-btncount">
+					<view class="price">$ {{item.totalprice}}</view>
+					<view class="btncount">
+						<view class="decrement">
+						   <image src="{{IP+'/assets/images/arg_decrement.png'}}" mode="" class="pic"/>
+						</view>
+						<view class="count">{{item.count}}</view>
+						<view class="increment">
+							<image src="{{IP+'/assets/images/arg_increment.png'}}" mode="" class="pic"/>
+						</view>
+					</view>
+				</view>
+			</view>
+		</view>
+	</view>
+</view>
+
+<!-- 标题 -->
+<view class="common-title-check-wrapper" style="margin-top: 40rpx;">
+	<view class="common-title-check-main">
+		<view class="title">关于我们</view>
+		<view class="check">
+			<view class="desc">查看全部</view>
+			<view class="icon">
+				<image src="{{IP+'/assets/images/arg_right.png'}}" mode="aspectFill" />
+			</view>
+		</view>
+	</view>
+</view>
+<!-- 瀑布流 -->
+<view class="water-fall-wrapper link" style="margin-top: 32rpx;">
+	<view class="water-fall-main">
+		<view class="left-wrapper">
+			<view class="left-main">
+				<view class="item-wrapper" wx:for="{{leftGoods}}" wx:key="this">
+					<view class="item-main">
+						<view class="pic" style="height: {{item.pic_height}}rpx;">
+							<image src="{{item.src}}" mode="aspectFill" />
+						</view>
+						<view class="title">
+							种植多种农作物
+						</view>
+						<view class="avatar-username">
+							<view class="avatar">
+								<image src="https://img.jsdesign2.com/assets/img/651ae3dc00b795b1063899af.png#804a97ce70379fae7acdf40873750039" mode="" />
+							</view>
+							<view class="username">
+								安置来wqeqeweqeqwdsfdfdf
+							</view>
+						</view>
+						<view class="like-count">
+							<image src="{{IP+'/assets/images/like.png'}}" mode="" class="like" />
+							<view class="count">888</view>
+						</view>
+					</view>
+				</view>
+			</view>
+		</view>
+		<view class="right-wrapper">
+			<view class="right-main">
+				<view class="item-wrapper" wx:for="{{rightGoods}}" wx:key="this">
+					<view class="item-main">
+						<view class="pic" style="height: {{item.pic_height}}rpx;">
+							<image src="{{item.src}}" mode="aspectFill" />
+						</view>
+						<view class="title">
+							种植多种农作物
+						</view>
+						<view class="avatar-username">
+							<view class="avatar">
+								<image src="https://img.jsdesign2.com/assets/img/651ae3dc00b795b1063899af.png#804a97ce70379fae7acdf40873750039" mode="" />
+							</view>
+							<view class="username">
+								安置来wqeqeweqeqwdsfdfdf
+							</view>
+						</view>
+						<view class="like-count">
+							<image src="{{IP+'/assets/images/like.png'}}" mode="" class="like" />
+							<view class="count">888</view>
+						</view>
+					</view>
+				</view>
+			</view>
+		</view>
+	</view>
+</view>

@@ -1,0 +1,125 @@
+<!-- 搜索 -->
+<view class="common-search-wrapper">
+	<view class="common-search-main">
+		<view class="icon">
+			<image src="{{IP+'/assets/images/arg_search.png'}}" mode="" />
+		</view>
+		<input type="text" placeholder="输入搜索内容" />
+	</view>
+</view>
+<!-- 标题 -->
+<view class="common-title-check-wrapper">
+	<view class="common-title-check-main">
+		<view class="title">农产品生产</view>
+		<view class="check">
+			<view class="desc">查看全部</view>
+			<view class="icon">
+				<image src="{{IP+'/assets/images/arg_right.png'}}" mode="aspectFill" />
+			</view>
+		</view>
+	</view>
+</view>
+<!-- 瀑布流 -->
+<view class="water-fall-wrapper">
+	<view class="water-fall-main">
+		<view class="left-wrapper">
+			<view class="left-main">
+				<view class="item-wrapper" wx:for="{{leftGoods}}" wx:key="this" bindtap="handleDetail" data-type="1">
+					<view class="item-main">
+						<view class="pic" style="height: {{item.pic_height}}rpx;">
+							<image src="{{item.src}}" mode="aspectFill" />
+						</view>
+						<view class="title">
+							种植多种农作物，如小麦、玉米、水稻等
+						</view>
+						<view class="desc">使用有机肥料和无农药种植，保证农产品的质量</view>
+						<view class="price">
+							<view class="danwei">￥</view>
+							<view class="num">454</view>
+						</view>
+					</view>
+				</view>
+			</view>
+		</view>
+		<view class="right-wrapper">
+			<view class="right-main">
+				<view class="item-wrapper" wx:for="{{rightGoods}}" wx:key="this"  bindtap="handleDetail" data-type="1">
+					<view class="item-main">
+						<view class="pic" style="height: {{item.pic_height}}rpx;">
+							<image src="{{item.src}}" mode="aspectFill" />
+						</view>
+						<view class="title">
+							种植多种农作物，如小麦、玉米、水稻等
+						</view>
+						<view class="desc">使用有机肥料和无农药种植，保证农产品的质量</view>
+						<view class="price">
+							<view class="danwei">￥</view>
+							<view class="num">454</view>
+						</view>
+					</view>
+				</view>
+			</view>
+		</view>
+	</view>
+</view>
+
+<!-- 标题 -->
+<view class="common-title-check-wrapper">
+	<view class="common-title-check-main">
+		<view class="title">农业技术</view>
+		<view class="check">
+			<view class="desc">查看全部</view>
+			<view class="icon">
+				<image src="{{IP+'/assets/images/arg_right.png'}}" mode="aspectFill" />
+			</view>
+		</view>
+	</view>
+</view>
+<!-- 瀑布流 -->
+<view class="water-fall-wrapper techno">
+	<view class="water-fall-main">
+		<view class="left-wrapper">
+			<view class="left-main">
+				<view class="item-wrapper" wx:for="{{leftGoods}}" wx:key="this"  bindtap="handleDetail" data-type="2">
+					<view class="item-main">
+						<view class="pic" style="height: {{item.pic_height}}rpx;">
+							<image src="{{item.src}}" mode="aspectFill" />
+						</view>
+						<view class="like-num">
+						   <view class="like">
+							     <image src="http://192.168.1.139:8080/assets/images/like.png" mode=""/>
+							 </view>
+							 <view class="num">5</view>
+						</view>
+						<view class="title-desc">
+								<view class="title">农业技术</view>
+								<view class="desc">了解最新的农业技术和种植方法</view>
+						</view>
+
+					</view>
+				</view>
+			</view>
+		</view>
+		<view class="right-wrapper">
+			<view class="right-main">
+				<view class="item-wrapper" wx:for="{{rightGoods}}" wx:key="this"  bindtap="handleDetail" data-type="2">
+					<view class="item-main">
+						<view class="pic" style="height: {{item.pic_height}}rpx;">
+							<image src="{{item.src}}" mode="aspectFill" />
+						</view>
+						<view class="like-num">
+						   <view class="like">
+							     <image src="http://192.168.1.139:8080/assets/images/like.png" mode=""/>
+							 </view>
+							 <view class="num">5</view>
+						</view>
+						<view class="title-desc">
+								<view class="title">农业技术</view>
+								<view class="desc">了解最新的农业技术和种植方法</view>
+						</view>
+					</view>
+				</view>
+			</view>
+		</view>
+	</view>
+</view>

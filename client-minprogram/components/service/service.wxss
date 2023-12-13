@@ -1,0 +1,105 @@
+.bgpic-main {
+    padding: 0 0 120rpx 0;
+}
+
+.card-wrapper {
+    padding: 0 30rpx;
+    margin-top: 60rpx;
+}
+.card-main {
+    width: 100%;
+    height: 400rpx;
+    border-radius: 20rpx;
+    background-color: #f6eee5;
+}
+.card-main .logo-name {
+    display: flex;
+    align-items: center;
+    padding: 50rpx 0 0 40rpx;
+}
+.card-main .logo-name .logo {
+    width: 110rpx;
+    height: 110rpx;
+    background-color:#4a7874;
+    border-radius: 100%;
+    margin-right: 50rpx;
+    overflow: hidden;
+}
+.card-main .logo-name .logo image {
+    width: 100%;
+    height: 100%;
+}
+.card-main .logo-name .name {
+    font-weight: 600;
+    color: #4a7874;
+}
+.card-main .aboutschoolmate {
+    margin-top: 40rpx;
+    display: flex;
+}
+.card-main .aboutschoolmate .item {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card-main .aboutschoolmate .item .main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.card-main .aboutschoolmate .item .main .pic {
+    width: 64rpx;
+    height: 64rpx;
+}
+.card-main .aboutschoolmate .item .main .pic image {
+    width: 100%;
+    height: 100%;
+}
+.card-main .aboutschoolmate .item .main .desc {
+    margin-top: 10rpx;
+    font-size: 32rpx;
+    font-weight: 600;
+    color: #4a7874;
+}
+
+.operation-wrapper {
+    margin-top: 100rpx;
+    width: 100%;
+}
+.operation-main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.operation-main .item {
+    width: 33.333%;
+    box-sizing: border-box;
+    /* background-color: #4a7874; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40rpx 0rpx;
+}
+.operation-main .item  .main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.operation-main .item  .main .pic {
+    width: 60rpx;
+    height: 60rpx;
+    /* background-color:  #4a7874; */
+}
+.operation-main .item  .main .pic image {
+    width: 100%;
+    height: 100%;
+}
+.operation-main .item  .main .desc {
+    margin-top: 15rpx;
+    color:  #4a7874;
+    font-size: 28rpx;
+    font-weight: 800;
+}

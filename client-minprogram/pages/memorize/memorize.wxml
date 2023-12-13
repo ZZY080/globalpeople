@@ -1,0 +1,32 @@
+<view class="pic-wrapper">
+    <view class="pic-main">
+        <view class="item">
+            <view class="pic">
+               <image src="{{IP+'/assets/images/2.jpg'}}" mode="aspectFit"  />
+            </view>
+            <view class="title">
+             2023北大毕业帮
+             2023北大毕业帮
+             2023北大毕业帮
+             2023北大毕业帮
+            </view>
+            <view class="info">
+                 <view class="logo-nametime">
+                    <view class="logo">
+                        <image src="{{IP+'/assets/images/backpic.png'}}"/>
+                    </view>
+                    <view class="nametime">
+                       <view class="name">电子科技大学中山学院校友会</view>
+                       <view class="time">2023-06-13 10:49:56</view>
+                    </view>
+                 </view>
+                 <view class="icon-count">
+                    <view class="icon">
+                        <image src="{{IP+'/assets/images/my-pic.png'}}" mode=""/>
+                    </view>
+                    <view class="count">138</view>
+                 </view>
+            </view>
+        </view>
+    </view>
+</view>

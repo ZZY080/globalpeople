@@ -1,0 +1,51 @@
+.price-wrapper {
+	margin-top: 50rpx;
+	padding: 0 20rpx;
+}
+
+.price-main {
+	border-radius: 16rpx;
+	background: rgba(247, 248, 250, 1);
+	padding: 16rpx 24rpx 16rpx 24rpx;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.price-main .info {
+	display: flex;
+	flex-direction: column;
+}
+
+.price-main .info .total {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.price-main .info .total .desc {
+	font-size: 24rpx;
+	color: rgba(29, 33, 41, 1);
+}
+
+.price-main .info .total .count {
+	font-size: 32rpx;
+	font-weight: 600;
+	color: rgba(0, 128, 0, 1);
+}
+
+.price-main .info .pre {
+	margin-top: 10rpx;
+	font-size: 20rpx;
+	color: rgba(134, 144, 156, 1);
+}
+
+.price-main .btns {
+	border-radius: 40rpx;
+	background: rgba(0, 128, 0, 1);
+	padding: 10px 16px 10px 16px;
+	font-size: 28rpx;
+	font-weight: 800;
+	color: rgba(255, 255, 255, 1);
+}

@@ -1,0 +1,153 @@
+.info-wrapper {
+	margin-top: 40rpx;
+	padding: 0 32rpx;
+}
+
+.info-main {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.info-main .avatar {
+	width: 96rpx;
+	height: 96rpx;
+	overflow: hidden;
+	border-radius: 50%;
+	border: 1px solid rgba(229, 230, 235, 1);
+	margin-right: 24rpx;
+}
+
+.info-main .center {
+	flex: 1;
+	margin-right: 40rpx;
+}
+
+.info-main .center .username {
+	font-size: 40rpx;
+	font-weight: 600;
+	color: rgba(29, 33, 41, 1);
+}
+
+.info-main .center .desc {
+	margin-top: 8rpx;
+	font-size: 12px;
+	display: -webkit-box;
+	-webkit-line-clamp: 1;
+	/* 显示两行 */
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+	color: rgba(134, 144, 156, 1);
+}
+
+.info-main .btns {
+	border-radius: 999px;
+	background: rgba(0, 128, 0, 1);
+	padding: 14rpx 20rpx 14rpx 20rpx;
+	font-size: 24rpx;
+	font-weight: 600;
+	color: rgba(255, 255, 255, 1);
+}
+
+/* 数据 */
+.data-wrapper {
+	margin-top: 40rpx;
+	padding: 0 32rpx;
+}
+
+.data-main {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	height: 148rpx;
+	border-radius: 24rpx;
+	background: rgba(247, 248, 250, 1);
+	padding: 16px 8px 16px 8px;
+}
+
+.data-main .item-wrapper {
+	width: 33.333%;
+	/* background-color: orange; */
+}
+
+.data-main .item-wrapper .item-main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.data-main .item-wrapper .item-main .title {
+	font-size: 24rpx;
+	color: rgba(134, 144, 156, 1);
+}
+
+.data-main .item-wrapper .item-main .count {
+	margin-top: 8rpx;
+	font-size: 32rpx;
+	font-weight: 800;
+	color: rgba(29, 33, 41, 1);
+}
+
+
+/* 数据分析 */
+.graph-wrapper {
+	margin-top: 24rpx;
+	padding: 0 32rpx;
+}
+
+.graph-main {
+	display: flex;
+	flex-direction: row;
+}
+
+.graph-main .item-wrapper {
+	box-sizing: border-box;
+	width: 50%;
+}
+
+.graph-main .item-wrapper:nth-child(2n+1) {
+	padding: 0 8rpx 0 0;
+}
+
+.graph-main .item-wrapper:nth-child(2n+2) {
+	padding: 0 0 0 8rpx;
+}
+
+.graph-main .item-wrapper .item-main {
+	box-sizing: border-box;
+	height: 296rpx;
+	border-radius: 24rpx;
+	background: rgba(247, 248, 250, 1);
+	padding: 32rpx;
+}
+
+.graph-main .item-wrapper .item-main .desc {
+	font-size: 24rpx;
+	color: rgba(134, 144, 156, 1);
+}
+
+.graph-main .item-wrapper .item-main .count-indicator {
+	margin-top: 16rpx;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.graph-main .item-wrapper .item-main .count-indicator .count {
+	font-size: 32rpx;
+	font-weight: 800;
+	color: rgba(29, 33, 41, 1);
+}
+
+.graph-main .item-wrapper .item-main .analysis {
+	margin-top: 24rpx;
+	height: 116rpx;
+	/* width: 800rpx; */
+  /* height: 800rpx; */
+	/* border: 1px solid red; */
+	/* background: linear-gradient(180deg, rgba(22, 93, 255, 0.4) 0%, rgba(22, 93, 255, 0) 100%); */
+}
+.graph-main .item-wrapper .item-main .analysis ec-canvas {
+	width: 100%;
+	height: 100%;
+}

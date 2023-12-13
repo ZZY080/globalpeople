@@ -1,0 +1,135 @@
+.score-wrapper {
+	margin-top: 48rpx;
+	padding: 0 32rpx;
+}
+
+.score-main {
+	border-radius: 12px;
+	background: rgba(247, 248, 250, 1);
+	padding: 32rpx;
+}
+
+.score-main .title {
+	font-size: 40rpx;
+	font-weight: 600;
+	color: rgba(29, 33, 41, 1);
+}
+
+.score-main .count-star {
+	display: flex;
+	align-items: center;
+	margin-top: 16rpx;
+}
+
+.score-main .count-star .count {
+	font-size: 28rpx;
+	color: rgba(134, 144, 156, 1);
+	margin-right: 12rpx;
+}
+
+.score-main .count-star .star {
+	flex: 1;
+	display: flex;
+	flex-direction: row;
+}
+
+.score-main .count-star .star .item {
+	width: 23rpx;
+	height: 23rpx;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-right: 10rpx;
+}
+
+.score-main .count-star .star .item .pic {
+	width: 100%;
+	height: 100%;
+}
+
+.score-main .eval {
+	margin-top: 14rpx;
+	font-size: 24rpx;
+	color: rgba(134, 144, 156, 1);
+}
+
+.score-main .desc {
+	margin-top: 16rpx;
+	font-size: 24rpx;
+	line-height: 39rpx;
+	color: rgba(134, 144, 156, 1);
+}
+
+
+.like-collect {
+	position: fixed;
+	bottom: 30%;
+	right: 40rpx;
+
+}
+
+.like-collect .like {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 76rpx;
+	width: 76rpx;
+	border-radius: 38rpx;
+	overflow: hidden;
+}
+
+.like-collect .like .pic {
+	width: 100%;
+	height: 100%;
+}
+
+.like-collect .collect {
+	margin-top: 20rpx;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 76rpx;
+	width: 76rpx;
+	overflow: hidden;
+	border-radius: 38rpx;
+}
+
+.like-collect .collect .pic {
+	width: 100%;
+	height: 100%;
+}
+
+.banner-wrapper.my .banner-main .item-main .info {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	top: 0px;
+}
+
+.banner-wrapper.my .banner-main .item-main .info .title {
+	font-size: 32rxp;
+	font-weight: 800;
+}
+.banner-wrapper.my .banner-main .item-main .info .danwei-num-time {
+	display: flex;
+	flex-direction: row;
+	padding: 32rpx 0;
+	font-size: 24rpx;
+	color: #FA5130;
+}
+.banner-wrapper.my .banner-main .item-main .info .danwei-num-time .num {
+	font-weight: 800;
+}
+.banner-wrapper.my .banner-main .item-main .info .btns {
+	font-size: 24rpx;
+	color: #FFFFFF;
+	background: linear-gradient(90deg, #FCC631, #FA5130);
+	border-radius: 30px;
+	padding: 18rpx 32rpx;
+}

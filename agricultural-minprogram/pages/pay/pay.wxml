@@ -1,0 +1,103 @@
+<view class="info-wrapper">
+	<view class="info-main">
+		<view class="desc-time">
+			<view class="desc">支付剩余时间</view>
+			<view class="time">14:09</view>
+		</view>
+		<view class="danwei-price">
+			<view class="danwei">￥</view>
+			<view class="price">{{money}}</view>
+		</view>
+		<view class="rest-order">
+			<view class="rest">藏求餐厅</view>
+			<view class="split">-</view>
+			<view class="order">1919919293832837</view>
+		</view>
+	</view>
+</view>
+<view class="payment-wrapper">
+	<radio-group bindchange="handleMethod" class="payment-main">
+		<label class="item" wx:for="{{paySelect}}" wx:key="this">
+			<view class="logo-desc">
+				<image src="{{item.imgsrc}}" mode="" class="logo" />
+				<view class="desc">
+					{{item.desc}}
+				</view>
+			</view>
+			<view class="icon">
+				<radio value="{{item.method}}" />
+			</view>
+		</label>
+	</radio-group>
+</view>
+<view class="btn-wrapper">
+	<view class="btn-main" bindtap="handleConfirmPay">
+		确认支付
+	</view>
+</view>
+
+<view class="password-wrap" wx:if="{{showPay}}">
+		<view class="password-main">
+			<view class="icon-warning">
+				<image src="{{IP+'/assets/images/arg_closed.png'}}" mode="" class="icon" bindtap="handlePasswordClosed" />
+				<view class="warning">请输入支付密码</view>
+			</view>
+			<view class="title">
+				付款给个人
+			</view>
+			<view class="danwei-price">
+				<view class="danwei">￥</view>
+				<view class="price">{{money}}</view>
+			</view>
+			<view class="desc-select">
+				<view class="desc">支付方式</view>
+				<view class="select">
+					<image src="{{payKeyword[payMethod].icon}}" mode="" class="paypic" />
+					<view class="payword">微信支付</view>
+				</view>
+			</view>
+			<view class="list" bindtap="handlePasswordBox">
+			  <view class="item"> 
+					{{inputPassword[0]?"*":""}}
+				</view>
+				<view class="item"> 
+					{{inputPassword[1]?"*":""}}	
+				</view>
+				<view class="item"> 
+					{{inputPassword[2]?"*":""}}		
+				</view>
+				<view class="item">
+					{{inputPassword[3]?"*":""}}	
+				</view>
+				<view class="item"> 
+					{{inputPassword[4]?"*":""}}
+				</view>
+				<view class="item"> 
+				{{inputPassword[5]?"*":""}}
+				</view>
+			</view>
+		</view>
+</view>
+<view class="keyboard-wrapper" wx:if="{{keyboard}}">
+   <view class="keyboard-main">
+	    <view class="icon-wrapper">
+			   <image src="{{IP+'/assets/images/arg_down.png'}}" mode="" class="icon" bindtap="handKeyboardClosed"/>
+			</view>
+			<view class="list">
+			    <view class="item" data-num="1" bindtap="handleKeyboardValue">1</view>
+			    <view class="item" data-num="2" bindtap="handleKeyboardValue">2</view>
+			    <view class="item" data-num="3" bindtap="handleKeyboardValue">3</view>
+			    <view class="item" data-num="4" bindtap="handleKeyboardValue">4</view>
+			    <view class="item" data-num="5" bindtap="handleKeyboardValue">5</view>
+			    <view class="item" data-num="6" bindtap="handleKeyboardValue">6</view>
+			    <view class="item" data-num="7" bindtap="handleKeyboardValue">7</view>
+			    <view class="item" data-num="8" bindtap="handleKeyboardValue">8</view>
+			    <view class="item" data-num="9" bindtap="handleKeyboardValue">9</view>
+			    <view class="item"></view>
+			    <view class="item" data-num="0" bindtap="handleKeyboardValue">0</view>
+			    <view class="item" bindtap="handleKeyboardClear">
+					   <image src="{{IP+'/assets/images/arg_delete.png'}}" mode="" class="pic"/>
+					</view>
+			</view>
+	 </view>
+</view>

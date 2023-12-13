@@ -1,0 +1,53 @@
+<navigationBar title="{{tabBarTitle[tabBarIndex]}}" />
+<view class="bgpic-wrapper">
+    <view class="bgpic-main">
+        <view class="card-wrapper">
+            <view class="card-main">
+                <view class="logo-name">
+                    <view class="logo">
+                        <image src="{{IP+'/assets/images/backpic.png'}}" mode="" />
+                    </view>
+                    <view class="name">
+                        电子科技大学中山学院
+                    </view>
+                </view>
+                <view class="aboutschoolmate">
+                    <view class="item">
+                        <view class="main">
+                            <view class="pic">
+                                <image src="{{IP+'/assets/images/schoolmate-card.png'}}" mode="" />
+                            </view>
+                            <view class="desc">校友卡</view>
+                        </view>
+                    </view>
+                    <view class="item">
+                        <view class="main">
+                            <view class="pic">
+                                <image src="{{IP+'/assets/images/schoolmate-welfare.png'}}" mode="" />
+                            </view>
+                            <view class="desc">校友福利</view>
+                        </view>
+                    </view>
+                </view>
+            </view>
+        </view>
+        <view class="operation-wrapper">
+            <view class="operation-main">
+                <view 
+                class="item" 
+                wx:for="{{tapItems}}"
+                wx:key="this"
+                data-url="{{item.url}}"
+                bindtap="handleDetail"
+                >
+                    <view class="main">
+                        <view class="pic">
+                            <image src="{{item.imgsrc}}" mode="" />
+                        </view>
+                        <view class="desc">{{item.desc}}</view>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

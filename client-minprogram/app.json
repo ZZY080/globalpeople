@@ -1,0 +1,24 @@
+{
+  "pages":[
+    "pages/home/home",
+    "pages/memorize/memorize",
+    "pages/register/register"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTextStyle":"black",
+    "navigationBarTitleText": "Weixin"
+    
+  },
+  "usingComponents": {
+      "navigationBar":"./components/navigationBar/navigationBar",
+      "Schoolmate":"./components/schoolmate/schoolmate",
+      "Organization":"./components/organization/organization",
+      "Logo":"./components/logo/logo",
+      "Service":"./components/service/service",
+      "My":"./components/my/my"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

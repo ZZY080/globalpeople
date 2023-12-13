@@ -1,0 +1,115 @@
+<!-- 轮播图 -->
+<view class="swiper-wrapper">
+	<swiper class="swipper-main" autoplay="true" interval="3000" duration="2000" circular>
+		<swiper-item wx:for="{{[1,2,3]}}" wx:key="this" class="item">
+			<image src="https://img.jsdesign2.com/assets/img/64cf58d23bd78ca589b1bc2b.png#58b64b3c48bf225f4a95bcedda287394" mode="aspectFill" />
+		</swiper-item>
+	</swiper>
+</view>
+<!-- 卡片 -->
+<view class="card-wrapper">
+	<view class="card-main">
+		<view class="left-card">
+			<image src="{{IP+'/assets/images/arg_soil_area.png'}}" mode="aspectFill" class="pic" />
+			<view class="title-desc">
+				<view class="title">优质农产品</view>
+				<view class="desc">新鲜美味，健康可靠</view>
+			</view>
+		</view>
+		<view class="right-box">
+			<view class="top-card">
+				<image src="{{IP+'/assets/images/arg_plant_time.png'}}" mode="aspectFill" class="pic" />
+				<view class="title-desc">
+					<view class="title">产地直供</view>
+					<view class="desc">新鲜美味，健康可靠</view>
+				</view>
+			</view>
+			<view class="bottom-card">
+				<image src="{{IP+'/assets/images/arg_pre_time.png'}}" mode="aspectFill" class="pic" />
+				<view class="title-desc">
+					<view class="title">价格实惠</view>
+					<view class="desc">新鲜美味，健康可靠</view>
+				</view>
+			</view>
+		</view>
+	</view>
+</view>
+<!-- 价格信息 -->
+<view class="price-wrapper">
+	<view class="price-main">
+		<view class="info">
+			<view class="total">
+				<text class="desc">合计：</text>
+				<text class="count">$1000</text>
+			</view>
+			<view class="pre">
+				<text class="desc">优惠：</text>
+				<text class="count">$1000</text>
+			</view>
+		</view>
+		<view class="btns">
+			提交订单
+		</view>
+	</view>
+</view>
+<!-- 标题 -->
+<view class="common-title-check-wrapper" style="margin-top: 60rpx;">
+    <view class="common-title-check-main">
+        <view class="title">农产品购买详情页</view>
+        <view class="check">
+            <view class="desc">查看全部</view>
+            <view class="icon">
+                <image src="{{IP+'/assets/images/arg_right.png'}}" mode="aspectFill" />
+            </view>
+        </view>
+    </view>
+</view>
+<!-- 瀑布流 -->
+<view class="water-fall-wrapper techno" style="margin-top: 32rpx;">
+    <view class="water-fall-main">
+        <view class="left-wrapper">
+            <view class="left-main">
+                <view class="item-wrapper" wx:for="{{leftGoods}}" wx:key="this">
+                    <view class="item-main">
+                        <view class="pic" style="height: {{item.pic_height}}rpx;">
+                            <image src="{{item.src}}" mode="aspectFill" />
+                        </view>
+                        <view class="like-num">
+                            <view class="like">
+                                <image src="{{IP+'/assets/images/like.png'}}" mode="" />
+                            </view>
+                            <view class="num">5</view>
+                        </view>
+                        <view class="title-desc">
+                            <view class="title">{{item.title}}</view>
+                            <view class="desc">{{item.desc}}</view>
+                        </view>
+
+                    </view>
+                </view>
+            </view>
+        </view>
+        <view class="right-wrapper">
+            <view class="right-main">
+                <view class="item-wrapper" wx:for="{{rightGoods}}" wx:key="this">
+                    <view class="item-main">
+                        <view class="pic" style="height: {{item.pic_height}}rpx;">
+                            <image src="{{item.src}}" mode="aspectFill" />
+                        </view>
+                        <view class="like-num">
+                            <view class="like">
+                                <image src="{{IP+'/assets/images/like.png'}}" mode="" />
+                            </view>
+                            <view class="num">5</view>
+                        </view>
+                        <view class="title-desc">
+                            <view class="title">{{item.title}}</view>
+                            <view class="desc">{{item.desc}}</view>
+                        </view>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>
+.

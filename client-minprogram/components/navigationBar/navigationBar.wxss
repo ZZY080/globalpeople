@@ -1,0 +1,13 @@
+.nav-wrapper {
+    margin-top: 38rpx;
+    width: 100%;
+    /* border: 1px solid red; */
+   
+}
+.nav-wrapper .nav-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30rpx;
+    font-weight: 700;
+}

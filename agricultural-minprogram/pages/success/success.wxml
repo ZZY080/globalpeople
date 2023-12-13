@@ -1,0 +1,12 @@
+<view class="info-wrapper">
+	<view class="info-main">
+		<view class="word">支付成功</view>
+		<view class="bgpic">
+		   <image src="{{IP+'/assets/images/arg_paysuccess.png'}}" mode=""/>
+		</view>
+		<view class="btns">
+			<view class="item" bindtap="handleDetail" data-type="1">返回首页</view>
+			<view class="item" bindtap="handleDetail" data-type="2">查看订单</view>
+		</view>
+	</view>
+</view>

@@ -1,0 +1,69 @@
+page {
+    background-color: #fafaf8;
+}
+.home-wrapper {
+   
+}
+
+.home-wrapper .home-main .tabBar {
+    background-color: #ffffff;
+    width: 100%;
+    padding: 10rpx 0 0 0;
+    height: 100rpx;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.home-wrapper .home-main .tabBar .item {
+    position: relative;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   
+}
+.home-wrapper .home-main .tabBar .item .icon {
+    position: relative;
+    width: 48rpx;
+    height: 48rpx;
+}
+.home-wrapper .home-main .tabBar .item .icon  .point {
+    position: absolute;
+    top: 0;
+    right: 0px;
+    width: 8rpx;
+    height: 8rpx;
+    border-radius: 4rpx;
+    background-color: red;
+}
+.home-wrapper .home-main .tabBar .item.school .icon {
+    width: 100rpx;
+    height: 100rpx;
+    border-radius: 50rpx;
+    overflow: hidden;
+    margin-bottom: 20rpx;
+}
+.home-wrapper .home-main .tabBar .item  .desc {
+    color: #d4d4d4;
+    font-size: 24rpx;
+    margin-top: 10rpx;
+}
+
+.home-wrapper .home-main .tabBar .item.active  .desc {
+    color: #4a7874;
+    font-size: 24rpx;
+}
+.home-wrapper .home-main .tabBar .item .top-radius {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 60%;
+    top: 0;
+    transform: translateY(-30%);
+    z-index: -1;
+    background-color: #ffffff;
+}

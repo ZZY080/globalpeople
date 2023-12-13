@@ -1,0 +1,99 @@
+<!-- 搜索 -->
+<view class="common-search-wrapper">
+    <view class="common-search-main">
+        <view class="icon">
+            <image src="{{IP+'/assets/images/arg_search.png'}}" mode="" />
+        </view>
+        <input type="text" placeholder="输入搜索内容" />
+    </view>
+</view>
+<!-- 标题 -->
+<view class="common-title-check-wrapper">
+    <view class="common-title-check-main">
+        <view class="title">农产品购买</view>
+        <view class="check">
+            <view class="desc">查看全部</view>
+            <view class="icon">
+                <image src="{{IP+'/assets/images/arg_right.png'}}" mode="aspectFill" />
+            </view>
+        </view>
+    </view>
+</view>
+<!-- 内容 -->
+<view class="content-wrapper" style="margin-top: 28rpx;">
+    <view class="content-main">
+        <view class="item" wx:for="{{[1,2,3,4,5]}}" bindtap="handleDetail" wx:key="this">
+            <image src="https://img.jsdesign2.com/assets/img/655c03b3e739773bfaf9eb18.png#6a0b49c527bb134e86b448950807dca1" mode="aspectFill" class="bgpic" />
+            <view class="info">
+                <view class="pic">
+                    <image src="https://img.jsdesign2.com/assets/img/655c03b3e739773bfaf9eb18.png#6a0b49c527bb134e86b448950807dca1" mode="aspectFill" />
+                </view>
+                <view class="title-desc">
+                    <view class="title">新鲜水果</view>
+                    <view class="desc">甜美多汁的新鲜水果，口感极佳</view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>
+<!-- 标题 -->
+<view class="common-title-check-wrapper" style="margin-top: 40rpx;">
+    <view class="common-title-check-main">
+        <view class="title">农产品购买</view>
+        <view class="check">
+            <view class="desc">查看全部</view>
+            <view class="icon">
+                <image src="{{IP+'/assets/images/arg_right.png'}}" mode="aspectFill" />
+            </view>
+        </view>
+    </view>
+</view>
+<!-- 瀑布流 -->
+<view class="water-fall-wrapper techno" style="margin-top: 32rpx;">
+    <view class="water-fall-main">
+        <view class="left-wrapper">
+            <view class="left-main">
+                <view class="item-wrapper" bindtap="handleDetail" wx:for="{{leftGoods}}" wx:key="this">
+                    <view class="item-main">
+                        <view class="pic" style="height: {{item.pic_height}}rpx;">
+                            <image src="{{item.src}}" mode="aspectFill" />
+                        </view>
+                        <view class="like-num">
+                            <view class="like">
+                                <image src="{{IP+'/assets/images/like.png'}}" mode="" />
+                            </view>
+                            <view class="num">5</view>
+                        </view>
+                        <view class="title-desc">
+                            <view class="title">新鲜水果</view>
+                            <view class="desc">优质水果，新鲜当季，美味可口，营养丰富</view>
+                        </view>
+
+                    </view>
+                </view>
+            </view>
+        </view>
+        <view class="right-wrapper">
+            <view class="right-main">
+                <view class="item-wrapper" bindtap="handleDetail" wx:for="{{rightGoods}}" wx:key="this">
+                    <view class="item-main">
+                        <view class="pic" style="height: {{item.pic_height}}rpx;">
+                            <image src="{{item.src}}" mode="aspectFill" />
+                        </view>
+                        <view class="like-num">
+                            <view class="like">
+                                <image src="{{IP+'/assets/images/like.png'}}" mode="" />
+                            </view>
+                            <view class="num">5</view>
+                        </view>
+                        <view class="title-desc">
+                            <view class="title">农业技术</view>
+                            <view class="desc">了解最新的农业技术和种植方法</view>
+                        </view>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>
+

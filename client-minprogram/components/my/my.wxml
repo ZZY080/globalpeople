@@ -1,0 +1,167 @@
+<navigationBar title="{{tabBarTitle[tabBarIndex]}}" />
+
+<view class="info-wrapper">
+    <view class="info-main">
+        <view class="personal">
+            <view class="logo-username">
+                <view class="pic">
+                    <image src="" mode="" />
+                </view>
+                <view class="right">
+                    <view class="name">曾志远</view>
+                    <view class="btns">注册用户</view>
+                </view>
+            </view>
+            <view class="reference">
+                <view class="desc">个人资料</view>
+            </view>
+        </view>
+        <view class="card">
+            <view class="school-info">
+                <view class="logo">
+                    <image src="{{IP+'/assets/images/backpic.png'}}" mode="" />
+                </view>
+                <view class="name">电子科技大学中山学院校友卡</view>
+            </view>
+            <view class="btns">
+                立即领取
+            </view>
+        </view>
+        <view class="folder-wallet">
+            <view class="item">
+                <view class="count">0</view>
+                <view class="desc">我的名片夹</view>
+            </view>
+            <view class="item">
+                <view class="count">0</view>
+                <view class="desc">卡包</view>
+            </view>
+        </view>
+    </view>
+</view>
+
+<view class="list-wrapper">
+    <view class="list-main">
+        <view class="item">
+            <view class="pic-desc">
+                <view class="pic">
+                    <image src="{{IP+'/assets/images/my-message.png'}}" mode=""/>
+                </view>
+                <view class="desc">我的消息</view>
+            </view>
+            <view class="arrow-pic">
+                <image src="{{IP+'/assets/images/my-right.png'}}" mode=""/>
+            </view>
+        </view>
+        <view class="item">
+            <view class="pic-desc">
+                <view class="pic">
+                    <image src="{{IP+'/assets/images/my-card.png'}}" mode=""/>
+                </view>
+                <view class="desc">我的名片</view>
+            </view>
+            <view class="arrow-pic">
+                <image src="{{IP+'/assets/images/my-right.png'}}" mode=""/>
+            </view>
+        </view>
+        <view class="item">
+            <view class="pic-desc">
+                <view class="pic">
+                    <image src="{{IP+'/assets/images/my-degree.png'}}" mode=""/>
+                </view>
+                <view class="desc">我的学籍</view>
+            </view>
+            <view class="arrow-pic">
+                <image src="{{IP+'/assets/images/my-right.png'}}" mode=""/>
+            </view>
+        </view>
+        <view class="item">
+            <view class="pic-desc">
+                <view class="pic">
+                    <image src="{{IP+'/assets/images/my-id.png'}}" mode=""/>
+                </view>
+                <view class="desc">档案照片</view>
+            </view>
+            <view class="arrow-pic">
+                <image src="{{IP+'/assets/images/my-right.png'}}" mode=""/>
+            </view>
+        </view>
+        <view class="item">
+            <view class="pic-desc">
+                <view class="pic">
+                    <image src="{{IP+'/assets/images/my-org.png'}}" mode=""/>
+                </view>
+                <view class="desc">我的组织</view>
+            </view>
+            <view class="arrow-pic">
+                <image src="{{IP+'/assets/images/my-right.png'}}" mode=""/>
+            </view>
+        </view>
+        <view class="item">
+            <view class="pic-desc">
+                <view class="pic"> <image src="{{IP+'/assets/images/my-activity.png'}}" mode=""/></view>
+                <view class="desc">我的活动</view>
+            </view>
+            <view class="arrow-pic">
+                <image src="../../assets/images/my-right.png" mode=""/>
+            </view>
+        </view>
+        <view class="item">
+            <view class="pic-desc">
+                <view class="pic"> <image src="{{IP+'/assets/images/my-vote.png'}}" mode=""/></view>
+                <view class="desc">我的投票</view>
+            </view>
+            <view class="arrow-pic">
+                <image src="{{IP+'/assets/images/my-right.png'}}" mode=""/>
+            </view>
+        </view>
+        <view class="item">
+            <view class="pic-desc">
+                <view class="pic"> <image src="{{IP+'/assets/images/my-pic.png'}}" mode=""/></view>
+                <view class="desc">我的相册</view>
+            </view>
+            <view class="arrow-pic">
+                <image src="../../assets/images/my-right.png" mode=""/>
+            </view>
+        </view>
+        <view class="item">
+            <view class="pic-desc">
+                <view class="pic">   <image src="{{IP+'/assets/images/my-pic.png'}}" mode=""/></view>
+                <view class="desc">我的留言</view>
+            </view>
+            <view class="arrow-pic">
+                <image src="{{IP+'/assets/images/my-right.png'}}" mode=""/>
+            </view>
+        </view>
+        <view class="item">
+            <view class="pic-desc">
+                <view class="pic">   <image src="{{IP+'/assets/images/my-feedback.png'}}" mode=""/></view>
+                <view class="desc">我的要反馈</view>
+            </view>
+            <view class="arrow-pic">
+                <image src="{{IP+'/assets/images/my-right.png'}}" mode=""/>
+            </view>
+        </view>
+        <view class="item">
+            <view class="pic-desc">
+                <view class="pic">   <image src="{{IP+'/assets/images/my-self.png'}}" mode=""/></view>
+                <view class="desc">个人资料</view>
+            </view>
+            <view class="arrow-pic">
+                <image src="{{IP+'/assets/images/my-right.png'}}" mode=""/>
+            </view>
+        </view>
+        <view class="item">
+            <view class="pic-desc">
+                <view class="pic">   <image src="{{IP+'/assets/images/my-settings.png'}}" mode=""/></view>
+                <view class="desc">账号设置</view>
+            </view>
+            <view class="arrow-pic">
+                <image src="{{IP+'/assets/images/my-right.png'}}" mode=""/>
+            </view>
+        </view>
+        <view class="support">
+           恒夏集团 提供技术支持
+        </view>
+    </view>
+</view>

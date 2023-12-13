@@ -1,0 +1,81 @@
+.pic-wrapper {
+    margin-top: 70rpx;
+    padding: 0rpx 30rpx ;
+}
+.pic-main {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.pic-main .item {
+    width: 100%;
+    border: 1px solid rgba(0,0,0,0.1);
+    border-radius: 20rpx;
+    overflow: hidden;
+    margin-bottom: 40rpx;
+}
+.pic-main .item .pic {
+    padding: 30rpx 0 30rpx 0;
+    /* width: 100%; */
+    display: flex;
+    justify-content: center;
+}
+.pic-main .item .pic image {
+    /* width: 100%; */
+}
+.pic-main .item .title {
+    font-size: 30rpx;
+    font-weight: 800;
+    padding: 0 20rpx;
+}
+.pic-main .item .info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40rpx;
+    padding: 0 20rpx 30rpx 20rpx;
+}
+.pic-main .item .info .logo-nametime {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.pic-main .item .info .logo-nametime .logo{
+    width: 100rpx;
+    height: 100rpx;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 20rpx;
+}
+.pic-main .item .info .logo-nametime .logo image {
+    width: 100%;
+    height: 100%;
+}
+.pic-main .item .info .logo-nametime .nametime .name {
+    font-size: 30rpx;
+    font-weight: 500;
+}
+.pic-main .item .info .logo-nametime .nametime .time {
+    margin-top: 10rpx;
+    font-size: 28rpx;
+    color: gray;
+}
+.pic-main .item .info .icon-count {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.pic-main .item .info .icon-count .icon {
+    width: 50rpx;
+    height: 50rpx;
+    margin-right: 10rpx;
+}
+.pic-main .item .info .icon-count .icon  image {
+    width: 100%;
+    height: 100%;
+}
+.pic-main .item .info .icon-count .count {
+    font-size: 28rpx;
+}

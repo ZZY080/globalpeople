@@ -1,0 +1,64 @@
+{
+  "pages": [
+    "pages/producedetail/producedetail",
+    "pages/success/success",
+    "pages/pay/pay",
+    "pages/produce/produce",
+    "pages/productsell/productsell",
+    "pages/productselldetail/productselldetail",
+    "pages/productbuy/productbuy",
+    "pages/productbuydetail/productbuydetail",
+    "pages/soilrent/soilrent",
+    "pages/soilrentdetail/soilrentdetail",
+    "pages/productplantdetail/productplantdetail",
+    "pages/planttechno/planttechno",
+    "pages/demo/demo",
+    "pages/seedbuy/seedbuy",
+    "pages/seedbuydetail/seedbuydetail"
+  ],
+  "usingComponents": {
+    "ec-canvas": "/components/ec-canvas/ec-canvas"
+  },
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarBackgroundColor": "#ffffff"
+  },
+  "tabBar": {
+    "list": [{
+        "pagePath": "pages/producedetail/producedetail",
+        "iconPath": "./assets/images/arg_farm.png",
+        "selectedIconPath": "./assets/images/arg_farm_active.png",
+        "text": "专属农场"
+      },
+      {
+        "pagePath": "pages/productbuy/productbuy",
+        "iconPath": "./assets/images/arg_buy.png",
+        "selectedIconPath": "./assets/images/arg_buy _active.png",
+        "text": "购买"
+      },
+      {
+        "pagePath": "pages/productplantdetail/productplantdetail",
+        "iconPath": "./assets/images/arg_my.png",
+        "selectedIconPath": "./assets/images/arg_my_active.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json",
+  "lazyCodeLoading": "requiredComponents",
+  "requiredPrivateInfos": [
+    "getLocation",
+    "chooseAddress"
+  ],
+  "plugins": {
+    "citySelector": {
+      "version": "1.0.2",
+      "provider": "wx63ffb7b7894e99ae"
+    }
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    }
+  }
+}

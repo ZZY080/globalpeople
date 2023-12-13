@@ -1,0 +1,163 @@
+.info-wrapper {
+    /* background-color: #ffffff; */
+    padding: 0 30rpx 0rpx 30rpx;
+}
+.info-main {
+
+}
+.info-main .personal {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.info-main .personal .logo-username {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.info-main .personal .logo-username .pic {
+    width: 100rpx;
+    height: 100rpx;
+    border-radius: 50%;
+    background-color: rgba(0,0,0,0.2);
+    overflow: hidden;
+    margin-right: 40rpx;
+}
+.info-main .personal .logo-username .pic image {
+    width: 100%;
+    height: 100%;
+}
+.info-main .personal .logo-username .right {
+
+}
+.info-main .personal .logo-username .right .name {
+    font-weight: 800;
+    color: #4a7874;
+}
+.info-main .personal .logo-username .right .btns {
+    border: 1px solid #4a7874;
+    color: #4a7874;
+    font-size: 25rpx;
+    padding: 5rpx 30rpx;
+    border-radius: 50rpx;
+    margin-top: 15rpx;
+}
+.info-main .personal .reference {
+    background-color:#4a7874 ;
+    color: #ffffff;
+    font-size: 25rpx;
+    padding: 13rpx 30rpx;
+    border-radius: 30rpx;
+}
+.info-main .card {
+    margin-top: 60rpx;
+    height: 200rpx;
+    border-radius: 20rpx;
+    background-color:#4a7874 ;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20rpx;
+    
+}
+.info-main .card .school-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.info-main .card .school-info  .logo {
+    width: 100rpx;
+    height: 100rpx;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 20rpx;
+}
+.info-main .card .school-info  .logo image {
+    width: 100%;
+    height: 100%;
+}
+.info-main .card .school-info .name {
+    font-size: 25rpx;
+    color: #ffffff;
+}
+.info-main .card  .btns {
+    padding: 10rpx 20rpx;
+    border: 1rpx solid #ffffff;
+    font-size: 25rpx;
+    color: #ffffff;
+}
+.info-main .folder-wallet {
+    display: flex;
+}
+.info-main .folder-wallet .item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* background-color: rebeccapurple; */
+    width: 50%;
+    padding: 40rpx 0 ;
+}
+.info-main .folder-wallet .item .count {
+    font-weight: 800;
+
+}
+.info-main .folder-wallet .item .desc {
+    margin-top: 10rpx;
+    font-size: 25rpx;
+    color: gray;
+}
+
+.list-wrapper {
+  
+   padding: 0 30rpx 130rpx 30rpx ;
+}
+
+.list-main .item {
+    background-color: #ffffff;
+    padding: 40rpx 30rpx;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10rpx;
+    border-radius: 30rpx;
+}
+
+.list-main .item .pic-desc {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.list-main .item .pic-desc .pic {
+    width: 60rpx;
+    height: 60rpx;
+    /* background-color: rgba(0,0,0,0.3); */
+    margin-right: 30rpx;
+}
+.list-main .item .pic-desc .pic  image {
+    width: 100%;
+    height: 100%;
+}
+.list-main .item .pic-desc  .desc {
+    /* color: ; */
+}
+.list-main .item  .arrow-pic {
+    width: 50rpx;
+    height: 50rpx;
+
+}
+.list-main .item  .arrow-pic image {
+    width: 100%;
+    height: 100%;
+}
+.list-main .support {
+    display: flex;
+    padding: 40rpx 0 ;
+    /* color: #4a7874; */
+    color: rgba(0,0,0,0.3);
+    justify-content: center;
+}

@@ -1,0 +1,172 @@
+<view class="info-wrapper">
+	<view class="info-main">
+		<image src="https://img.jsdesign2.com/assets/img/643e64dab5b8c03bc93fc1ac.png#db42ae23607f67eff52cc1bc40f5a9af" mode="" class="avatar" />
+		<view class="center">
+			<view class="username">谢军</view>
+			<view class="desc">这里是农产品种植详情页，展示了农作物的种植情况。</view>
+		</view>
+		<view class="btns">编辑资料</view>
+	</view>
+</view>
+<view class="data-wrapper">
+	<view class="data-main">
+		<view class="item-wrapper">
+			<view class="item-main">
+				<view class="title">发布</view>
+				<view class="count">1986</view>
+			</view>
+		</view>
+		<view class="item-wrapper">
+			<view class="item-main">
+				<view class="title">关注</view>
+				<view class="count">2888</view>
+			</view>
+		</view>
+		<view class="item-wrapper">
+			<view class="item-main">
+				<view class="title">粉丝</view>
+				<view class="count">2817</view>
+			</view>
+		</view>
+	</view>
+</view>
+<view class="card-wrapper">
+	<view class="card-main">
+		<view class="left-card">
+			<image src="{{IP+'/assets/images/arg_soil_area.png'}}" mode="aspectFill" class="pic" />
+			<view class="title-desc">
+				<view class="title">土地面积</view>
+				<view class="desc">种植面积</view>
+			</view>
+		</view>
+		<view class="right-box">
+			<view class="top-card">
+				<image src="{{IP+'/assets/images/arg_plant_time.png'}}" mode="aspectFill" class="pic" />
+				<view class="title-desc">
+					<view class="title">种植时间</view>
+					<view class="desc">种植面积</view>
+				</view>
+			</view>
+			<view class="bottom-card">
+				<image src="{{IP+'/assets/images/arg_pre_time.png'}}" mode="aspectFill" class="pic" />
+				<view class="title-desc">
+					<view class="title">预计收获时间</view>
+					<view class="desc">种植面积</view>
+				</view>
+			</view>
+		</view>
+	</view>
+</view>
+<!-- 标题 -->
+<view class="common-title-check-wrapper" style="margin-top: 66rpx;">
+  <view class="common-title-check-main">
+    <view class="title">农产品种植情况</view>
+    <view class="check">
+      <view class="desc">查看全部</view>
+      <view class="icon">
+        <image src="{{IP+'/assets/images/arg_right.png'}}" mode="aspectFill" />
+      </view>
+    </view>
+  </view>
+</view>
+<!-- 数据分析 -->
+<view class="graph-wrapper">
+    <view class="graph-main">
+		   <view class="item-wrapper">
+			     <view class="item-main">
+					   <view class="desc">种植周期</view>
+						 <view class="count-indicator">
+						   <view class="count">六个月</view>
+							 <view class="indicator"></view>
+						 </view>
+						 <view class="analysis">
+							<ec-canvas id="echarts" canvas-id="echarts" ec="{{ec}}"></ec-canvas>
+							</view>
+					 </view>
+			 </view>
+			 <view class="item-wrapper">
+			     <view class="item-main">
+						<view class="desc">产量</view>
+						 <view class="count-indicator">
+						   <view class="count">1000公斤</view>
+							 <view class="indicator"></view>
+						 </view>
+						 <view class="analysis">
+							<ec-canvas id="echarts" canvas-id="echarts" ec="{{ec}}"></ec-canvas>
+							
+						 </view>
+					 </view>
+			 </view>
+		</view>
+</view>
+
+<!-- 标题 -->
+<view class="common-title-check-wrapper" style="margin-top: 56rpx;">
+  <view class="common-title-check-main">
+    <view class="title">推荐农产品</view>
+    <view class="check">
+      <view class="desc">查看全部</view>
+      <view class="icon">
+        <image src="{{IP+'/assets/images/arg_right.png'}}" mode="aspectFill" />
+      </view>
+    </view>
+  </view>
+</view>
+<!-- 瀑布流 -->
+<view class="water-fall-wrapper link" style="margin-top: 32rpx;">
+  <view class="water-fall-main">
+    <view class="left-wrapper">
+      <view class="left-main">
+        <view class="item-wrapper" wx:for="{{leftGoods}}" wx:key="this">
+          <view class="item-main">
+            <view class="pic" style="height: {{item.pic_height}}rpx;">
+              <image src="{{item.src}}" mode="aspectFill" />
+            </view>
+            <view class="title">
+              种植多种农作物
+            </view>
+            <view class="avatar-username">
+              <view class="avatar">
+                <image src="https://img.jsdesign2.com/assets/img/651ae3dc00b795b1063899af.png#804a97ce70379fae7acdf40873750039" mode="" />
+              </view>
+              <view class="username">
+                安置来wqeqeweqeqwdsfdfdf
+              </view>
+            </view>
+            <view class="like-count">
+              <image src="{{IP+'/assets/images/like.png'}}" mode="" class="like" />
+              <view class="count">888</view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="right-wrapper">
+      <view class="right-main">
+        <view class="item-wrapper" wx:for="{{rightGoods}}" wx:key="this">
+          <view class="item-main">
+            <view class="pic" style="height: {{item.pic_height}}rpx;">
+              <image src="{{item.src}}" mode="aspectFill" />
+            </view>
+            <view class="title">
+              种植多种农作物
+            </view>
+            <view class="avatar-username">
+              <view class="avatar">
+                <image src="https://img.jsdesign2.com/assets/img/651ae3dc00b795b1063899af.png#804a97ce70379fae7acdf40873750039" mode="" />
+              </view>
+              <view class="username">
+                安置来wqeqeweqeqwdsfdfdf
+              </view>
+            </view>
+            <view class="like-count">
+              <image src="{{IP+'/assets/images/like.png'}}" mode="" class="like" />
+              <view class="count">888</view>
+            </view>
+
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,77 @@
+
+/* 内容 */
+.hot-recom-wrapper {
+	margin-top: 16rpx;
+	padding: 0 32rpx;
+}
+
+.hot-recom-main {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.hot-recom-main .item-wrapper {
+	width: 50%;
+	margin-bottom: 20rpx;
+}
+
+.hot-recom-main .item-wrapper:nth-child(odd) {
+	box-sizing: border-box;
+	padding-right: 8rpx;
+}
+
+.hot-recom-main .item-wrapper:nth-child(even) {
+	box-sizing: border-box;
+	padding-left: 8rpx;
+}
+
+.hot-recom-main .item-wrapper .item-main {
+	height: 396rpx;
+	border-radius: 20rpx;
+	overflow: hidden;
+	background-color: #f7f8fa;
+
+}
+
+.hot-recom-main .item-wrapper .item-main .pic {
+	width: 100%;
+	height: 244rpx;
+}
+
+.hot-recom-main .item-wrapper .item-main .pic image {
+	width: 100%;
+	height: 100%;
+}
+
+.hot-recom-main .item-wrapper .item-main .desc {
+	margin-top: 16rpx;
+	padding: 0 32rpx;
+	font-size: 28rpx;
+	font-weight: 400;
+	color: rgba(29, 33, 41, 1);
+}
+
+.hot-recom-main .item-wrapper .item-main .name-like {
+	padding: 0 32rpx;
+	display: flex;
+	align-items: center;
+	margin-top: 14rpx;
+}
+
+.hot-recom-main .item-wrapper .item-main .name-like .name {
+	flex: 1;
+	font-size: 24rpx;
+	color: rgba(134, 144, 156, 1);
+}
+
+.hot-recom-main .item-wrapper .item-main .name-like .like {
+	width: 28rpx;
+	height: 28rpx;
+	/* background-color: red; */
+}
+
+.hot-recom-main .item-wrapper .item-main .name-like .like image {
+	width: 100%;
+	height: 100%;
+}

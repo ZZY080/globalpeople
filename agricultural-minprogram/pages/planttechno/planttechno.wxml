@@ -1,0 +1,163 @@
+<view class="bg-wrapper">
+	<view class="bg-main">
+		<view class="item-wrapper">
+			<view class="item-main">
+				<view class="pic">
+				<image src="https://img.jsdesign2.com/assets/img/6461fe2327b78b23e60ef5bc.png#d973ff6d2700ceafae5a6fddd99a325c" mode=""/>
+				</view>
+				<view class="intro">
+					<view class="desc">
+						农产品销售，让您随时随地了解最新的农产品信息。
+					</view>
+					<view class="count">
+						733条内容
+					</view>
+					<view class="join">
+						<view class="avatar">
+							<view class="list">
+								<view class="item" style="left: 0;">
+								   <image src="/assets/images/3.png" mode=""/>
+								</view>
+								<view class="item" style="left: 20rpx;">
+									<image src="/assets/images/3.png" mode=""/>
+								</view>
+								<view class="item" style="left: 40rpx;">
+								  <image src="/assets/images/3.png" mode=""/>
+								</view>
+								<view class="item" style="left:60rpx;">
+									<image src="/assets/images/3.png" mode=""/>
+								</view>
+								<view class="item" style="left:80rpx;">
+								   s
+								</view>
+							</view>
+						</view>
+						<view class="count">
+						 31 个参与者
+						</view>
+
+					</view>
+				</view>
+			</view>
+		</view>
+	</view>
+</view>
+<!-- 标题 -->
+<view class="common-title-check-wrapper" style="margin-top:36rpx ;">
+	<view class="common-title-check-main">
+		<view class="title">种植技术</view>
+		<view class="check" wx:if="{{false}}">
+			<view class="desc">查看全部</view>
+			<view class="icon">
+				<image src="{{IP+'/assets/images/arg_right.png'}}" mode="aspectFill" />
+			</view>
+		</view>
+	</view>
+</view>
+<!-- 技术 -->
+<view class="techno-wrapper">
+   <view class="techno-main">
+	   <view class="item" wx:for="{{[0,1,2,3,4]}}" wx:key="this">
+		    <view class="info">
+				   <image src="https://img.jsdesign2.com/assets/img/655c03a4a12e5e2687f1852f.png#5d1c937504c1b5e031ad9bad86f737fe" mode="" class="avatar"/>
+					 <view class="center">
+					     <view class="name-icon">
+							   <view class="name">于志艳</view>
+								 <image src="{{IP+'/assets/images/arg_respect.png'}}" class="icon"></image>
+							 </view>
+							 <view class="word">
+								了解最新的农业种植技术和方法，提高农作物的产量和质量
+							 </view>
+					 </view>
+					 <view class="btns">关注</view>
+				</view>
+				<view class="title">种植技术</view>
+				<view class="desc">掌握科学的施肥、灌溉、病虫害防治等农业技术，提高农作物的生长速度和抗病能力,掌握科学的施肥、灌溉、病虫害防治等农业技术，提高农作物的生长速度和抗病能力</view>
+				<view class="tags">
+				    <image src="{{IP+'/assets/images/arg_tags.png'}}" mode="" class="pic"/>
+						<view class="tag-word">
+						  技术
+						</view>
+				</view>
+				<view class="operation">
+				   <view class="item-wrapper" wx:for="{{technoData}}">
+					    <view class="item-main">
+							  <image src="{{item.img}}" mode="" class="icon"/>
+								 <view class="icon-word">{{item.desc}}</view>
+							</view>
+					 </view>
+				</view>
+		 </view>
+	 </view>
+</view>
+
+<!-- 标题 -->
+<view class="common-title-check-wrapper" style="margin-top: 56rpx;">
+  <view class="common-title-check-main">
+    <view class="title">种植</view>
+    <view class="check">
+      <view class="desc">查看全部</view>
+      <view class="icon">
+        <image src="{{IP+'/assets/images/arg_right.png'}}" mode="aspectFill" />
+      </view>
+    </view>
+  </view>
+</view>
+<!-- 瀑布流 -->
+<view class="water-fall-wrapper link" style="margin-top: 32rpx;">
+  <view class="water-fall-main">
+    <view class="left-wrapper">
+      <view class="left-main">
+        <view class="item-wrapper" wx:for="{{leftGoods}}" wx:key="this">
+          <view class="item-main">
+            <view class="pic" style="height: {{item.pic_height}}rpx;">
+              <image src="{{item.src}}" mode="aspectFill" />
+            </view>
+            <view class="title">
+              种植多种农作物
+            </view>
+            <view class="avatar-username">
+              <view class="avatar">
+                <image src="https://img.jsdesign2.com/assets/img/651ae3dc00b795b1063899af.png#804a97ce70379fae7acdf40873750039" mode="" />
+              </view>
+              <view class="username">
+                安置来wqeqeweqeqwdsfdfdf
+              </view>
+            </view>
+            <view class="like-count">
+              <image src="{{IP+'/assets/images/like.png'}}" mode="" class="like" />
+              <view class="count">888</view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="right-wrapper">
+      <view class="right-main">
+        <view class="item-wrapper" wx:for="{{rightGoods}}" wx:key="this">
+          <view class="item-main">
+            <view class="pic" style="height: {{item.pic_height}}rpx;">
+              <image src="{{item.src}}" mode="aspectFill" />
+            </view>
+            <view class="title">
+              种植多种农作物
+            </view>
+            <view class="avatar-username">
+              <view class="avatar">
+                <image src="https://img.jsdesign2.com/assets/img/651ae3dc00b795b1063899af.png#804a97ce70379fae7acdf40873750039" mode="" />
+              </view>
+              <view class="username">
+                安置来wqeqeweqeqwdsfdfdf
+              </view>
+            </view>
+            <view class="like-count">
+              <image src="{{IP+'/assets/images/like.png'}}" mode="" class="like" />
+              <view class="count">888</view>
+            </view>
+
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
