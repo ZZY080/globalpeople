@@ -22,7 +22,11 @@ async function createWindow() {
       contextIsolation: !process.env.ELECTRON_NODE_INTEGRATION
     }
   })
-
+  win.on("resize",()=>{
+    const {width,height} = win.getContentSize();
+    const contentHeight = height;
+    win.webContents.send("update-content-height",contentHeight)
+  })
   if (process.env.WEBPACK_DEV_SERVER_URL) {
     await win.loadURL(process.env.WEBPACK_DEV_SERVER_URL)
     if (!process.env.IS_TEST) win.webContents.openDevTools()
